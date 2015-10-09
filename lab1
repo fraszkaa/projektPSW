@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Trip</title>
+		<meta name="description" content="Wybierz swoją podróż marzeń">
+		<meta name="author" content="Natalia Adamus, Katarzyna Czechowicz">
+
+		<meta "keywords" content="podróż, wczasy, wypoczynek, wakacje">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="icon4.png">
+		
+		<style>
+			#header{
+				background-color:black;
+			    color:white;
+			    text-align:center;
+			    padding:10px;
+			    font-family:verdana;
+			}
+			#footer {
+			    background-color:black;
+			    color:white;
+			    clear:both;
+			    text-align:center;
+			    padding:5px;	 	 
+			}
+			#nav {
+			    line-height:50px;
+			    background-color:#eeeeee;
+			    
+			    float:left;
+			    padding:30px;
+			    font-size:150%;	
+			    height:inherit;
+			       
+			}
+			#section {
+			    
+			    float:left;
+			    padding:10px;
+			}
+			
+			ul#menu {
+			    padding: 0;
+			}
+			
+			ul#menu li {
+			    display: inline;
+			}
+			
+			ul#menu li a {
+			    background-color: black;
+			    color: white;
+			    padding: 10px 20px;
+			    text-decoration: none;
+			    border-radius: 4px 4px 0 0;
+			}
+			
+			ul#menu li a:hover {
+			    background-color: blue;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		<div id="header">
+			<header>
+				<h1>Trip- biuro podróży</h1>
+			</div>
+				
+				
+			</header>
+			<div >
+			<nav>
+				<ul id="menu">
+					<li><a href="home.html">Strona główna</a></li>
+				
+					<li><a href="contact.html">Kontakt</a></li>
+					
+					<li><a href="countries.html">Kraje</a></li>
+				</ul>
+			</nav>
+			</div>
+			
+			
+
+		<!--	<div id="section">
+				<h2>London</h2>
+				<img src="greece.jpg" alt="Greece" >
+				<p>
+				London is the capital city of England. It is the most populous city in the United Kingdom,
+				with a metropolitan area of over 13 million inhabitants.
+				</p>
+				<p>
+				Standing on the River Thames, London has been a major settlement for two millennia,
+				its history going back to its founding by the Romans, who named it Londinium.
+				</p>
+			</div>
+		-->		
+			<section>
+				
+			<p><img src="greece2.jpg" alt="Plaża"  align="right" height="350px"  hspace="20">	</p>
+		 	 <fieldset>
+		     	<legend>Wszystkie oferty:</legend>
+		     	      
+                    <input type="radio"
+                           name="frame_type"
+                           id="form_frame_type_wczasy"
+                           value="wczasy"
+                           checked>
+                    <label for="form_frame_type_wczasy">Wczasy</label>
+                    <input type="radio"
+                           name="frame_type"
+                           id="form_frame_type_wycieczki"
+                           value="wycieczki">
+                    <label for="form_frame_type_wycieczki">Wycieczki</label>
+                    <input type="radio"
+                           name="frame_type"
+                           id="form_frame_type_hotele"
+                           value="hotele">
+                    <label for="form_frame_type_hotele">Hotele</label><br><br>
+                    Data wyjazdu:<br>
+                    <!-- dzisiejsza lub późniejsza-nie ma-->
+					<input type="date" name="dateDeparture" min="2015-09-13"><br><br>
+					<!-- późniejsza od daty wyjazdu- nie ma-->
+					Data przyjazdu:<br>
+					<input type="date" name="dateArrival"  max="2016-09-02"><br><br>
+					
+						Dokąd:<br>
+			   		 <select>
+			   		 	
+	                    <optgroup label="Europa">
+	                        <option value="Grecja">Grecja</option>
+	                        <option value="Włochy">Włochy</option>
+	                    </optgroup>
+	                    <optgroup label="Afryka">
+	                        <option value="Egipt">Egipt</option>
+	                        <option value="Tunezja">Tunezja</option>
+	                    </optgroup>
+	                    <optgroup label="Azja">
+	                        <option value="Chiny">Chiny"</option>
+	                        <option value="Japonia">Japonia"</option>
+	                    </optgroup>
+	                </select>
+	               <br><br>Skąd:<br>
+			   		 <select>
+			   		 	
+	                  
+	                        <option value="Katowice">Katowice</option>
+	                        <option value="Kraków">Kraków</option>
+	                   
+	                        <option value="Warszawa">Warszawa</option>
+	                        <option value="Wrocław">Wrocław</option>
+	                   
+	                </select>
+	                <br><br>Dorośli:
+			   		 <select>
+			   		 	
+	                  
+	                        <option value="1">1</option>
+	                        <option value="2">2</option>
+	                        <option value="3">3</option>
+	                        <option value="4">4</option>
+	                   
+	                </select>
+	                Dzieci:
+			   		 <select>
+			   		 	
+	                  		<option value="0">0</option>
+	                        <option value="1">1</option>
+	                        <option value="2">2</option>
+	                        <option value="3">3</option>
+	                        <option value="4">4</option>
+	                   
+	                </select>
+	            <br><br><br>
+	            <!-- nie działa-->
+			    <input type="reset" value="Wyczyść">
+				<input type="submit" value="Szukaj">
+				
+			 </fieldset>
+			</form>
+					
+			</p>		
+			</section>
+
+			</div>
+			<div id="footer">
+			<footer>
+				<p>
+					&copy; Copyright  by Natalia Adamus, Katarzyna Czechowicz
+				</p>
+			</footer>
+			</div>
+		</div>
+	</body>
+</html>
